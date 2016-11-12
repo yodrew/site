@@ -1,0 +1,915 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>make - darkroom retreat</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+  <body> 
+    <div class="navbar">
+          <a href="/"><h1>darkroom retreat</h1></a>
+          <ul class='nav'>
+	<li><a href='/blog'>blog</a></li>
+	<li><a href='/darkness-conjecture'>darkness conjecture</a></li>
+	<li><a href='/reports'>reports</a></li>
+	<li><a href='/other-writings'>other writings</a></li>
+	<li><a href='/about'>about</a></li>
+</ul><br />
+<!-- Begin MailChimp Signup Form -->
+<!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style> -->
+
+
+<div class="navx">
+<div id="mc_embed_signup">
+<form action="http://andrewdurham.us7.list-manage.com/subscribe/post?u=d6d59515adc7449be31fb5e5a&amp;id=7c408bdfaa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<label for="mce-EMAIL">get newsletter</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+<!--End mc_embed_signup-->
+
+
+<p>
+<!-- 
+Support darkroom retreat research
+ <a href="/#booklet">Buy</a> booklet<br /> 
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="B5J9DMPM9J3EL">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="> Click here to donate with PayPal <">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+<br />
+</p>
+<img src="/img/book/adcf.jpg" alt="book cover image" width="220" height="312"> -->
+<p>This website contains the content of my book, <em>darkroom retreat</em>, as well as my related and earlier writings. Welcome. <br />
+&ndash;ad</p>
+<p>
+<em>update log</em><br />
+15.05.1:<br />
+- resequenced sections in <em>format</em><br />
+- minor changes throughout<br />
+- coming soon: new designs for vent and window
+</p><p>
+site powered by <a href="http://nanoc.ws">nanoc</a></p>
+<br />
+</div>
+
+    </div>
+    <div class="content">
+     	<h3>make</h3>
+ 		<p>Use these instructions to make essential components of a darkroom. I address darkening, ventilation, and plumbing for both regular and off-grid locations. I will give design constraints for each function so you can come up with a different way of solving the design problem. Each constraint is listed in order of importance. If you come up with something more effective, simpler, faster, cheaper, or more elegant, fantastic. Please share it (see “open source” section in <a href="/introduction/">introduction</a>. Source files are also linked to below.</p>
+
+<h4 id="metric">metric</h4>
+
+<p>All measurements given in metric. Used to (imperial) inches, pounds, and gallons? Get a handle on the brain-descrambling metric system in a half-minute:</p>
+
+<ol>
+  <li>understand you will simply be counting with whole numbers to 10 and multiplying by 10 like normal, not wrestling with fractions and various conversion factors. Common metric conversions:
+    <ul>
+      <li>length: 1m=100cm=1000mm (meter, centimeter, millimeter)</li>
+      <li>volume: 1L=10dL=1000mL (liter, deciliter, milliliter)</li>
+      <li>mass (weight): 1kg=1000g</li>
+      <li>cool interconversions: 
+        <ul>
+          <li>1L=10cm x 10cm x 10cm (1000cm<sup>3</sup>)</li>
+          <li>1L water=1kg</li>
+          <li>so, 1mL or 1cm<sup>3</sup> water=1g</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>use these <em>near</em>-equivalents to visualize my descriptions:
+    <ul>
+      <li>25mm = 1 inch</li>
+      <li>10cm = 4 inches</li>
+      <li>1kg = 2.2 pounds</li>
+      <li>4L = 1 gallon</li>
+      <li>more at chapter’s end.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="ventilation">ventilation</h4>
+
+<p>The tricky part of making a darkroom is not darkening it but ventilating it. After all, now the windows and doors are sealed!</p>
+
+<p>Fresh air is always important. If you weighed the mass of all the air you breathe in a day, it would be twice as much as the food you eat. In a darkroom, you have little more to do all day than breathe. So if you haven’t usually paid attention to air quality, you will likely notice it in darkness. Even if you don’t, poor air quality cancels most benefits of darkness. Go out of your way to provide yourself continuous fresh air. Covering your eyes and opening the door a few times a day does not work.</p>
+
+<p>ventilation <em>constraints:</em> 
+- provides plenty of fresh air
+- lightproof
+- silent (no hum or harmonics)
+- comfortable temperature
+- economical (ie, no wasted heat to the outdoors. This is more involved and a lower priority than retreating itself. Find more in heat recovery section below. Besides lowering cost, it improves air quality and comfortability).</p>
+
+<p>Sometimes, <em>supply</em> and <em>return</em> vents (for fresh and stale air) exist in the same room or suite. This is a fancy version of <em>balanced</em> mechanical ventilation. If your place has it, thank your lucky stars. Just make sure it runs all the time. Likewise, if your darkroom has a supply vent and is attached to a bathroom with a quiet exhaust fan, your ventilation is handled.</p>
+
+<p>But balanced systems usually place supply vents in bedrooms and living rooms and return vents in kitchens and separate bathrooms. This means air leaves a bedroom under the door. In this case, you will need an <em>underdoor</em> lightproof vent (plans below).</p>
+
+<p>More often, dwellings supply fresh air through bedroom and living room windows and return stale air through fans in bathroom and kitchen exhaust fans. In this case, a lightproof multi-purpose <em>helix</em> vent built into a bedroom window panel lets in air, but no light. And an underdoor vent lets the stale air out.</p>
+
+<p>Rooms with passive ventilation, which relies on open windows or exterior vents or ventilation by infiltration (air leaks everywhere that will get sealed against light) will need helix vents in window panels at different heights. Maybe even ducting and a fan.</p>
+
+<p>By closely observing a building it with the purpose of ventilation in mind—I have discovered different ways to engineer it. Sometimes rooms have lightproof and sound-dampened holes built into them in unexpected places:</p>
+
+<ul>
+  <li>unused holes for pipes, wires, chimneys, and ventilation. </li>
+  <li>behind a cupboard or inside a closet</li>
+  <li>a removable panel that could be temporarily replaced with one with a hole in it. </li>
+</ul>
+
+<p>For example, I once found a cosmetically damaged door in the garbage at a building supply store exactly the same size as my darkroom’s door. So I stored the original door and cut holes in the damaged door for ventilation. </p>
+
+<p>Another darkroom had no ventilation or suitable holes anywhere. Nor a door, just a doorway. So we built a frame inside the doorway with a narrow door on one side and a narrower panel on the other. We cut holes in the panel for ventilation. We fixed the frame in the existing doorway with metal straps screwed into old hinge holes. So we left no trace when dismantling the darkroom.</p>
+
+<p>Similarly, we hung 7m of ducting that ran through three rooms; attached a silencer to it; made three window panels; and imperfectly covered five more with only one new screw hole in the entire rented house. And that hole was invisible behind a loose piece of trim. </p>
+
+<p>Sewage pipes drain downward but are ventilated upward. Once, friends and I replaced a flush toilet with a composting toilet. The exposed drain pipe, being oversize and in a single-story house, wasn’t subject to backflow. So it proved a perfect exhaust duct for a case fan at floor level. Imagination conquers all obstacles (and renews itself in darkness).</p>
+
+<h5 id="lightproof-vent">lightproof vent</h5>
+
+<p>Here are design constraints, photos, plans, and instructions for making and installing lightproof helix and underdoor vents.</p>
+
+<ul>
+  <li>vent <em>constraints</em> (helix vent specifications in parentheses){underdoor vent specifications in curly braces}:
+    <ul>
+      <li>durable (protective cardboard shell){can be made of sheet metal or shielded with board}</li>
+      <li>thin enough to fit between panel and window (64mm){n/a}</li>
+      <li>cross-sectional area for passage of air: 75+cm<sup>2</sup> (90cm<sup>2</sup>){60-120cm<sup>2</sup>}</li>
+      <li>short air passage (195mm){140mm} </li>
+      <li>low to moderate skill level (moderate:){low}</li>
+      <li>elegant (simple repeated form, uses common materials, compact, sine wave-shaped passage accommodates natural helical movement of air, synergetic and sacred geometry in design principle){simple}</li>
+      <li>cheap ($4 in materials, 1-4 hour assembly time){$1 in materials, 1 hour assembly time}
+<!-- {pagebreak} --></li>
+    </ul>
+  </li>
+</ul>
+
+<h6 id="helix-vent">helix vent</h6>
+
+<ul>
+  <li>photos
+    <ul>
+      <li>complete
+<img src="/img/plans/book/helix-vent/complete.jpg" alt="complete vent photo" />  </li>
+      <li>exploded<br />
+<img src="/img/plans/book/helix-vent/exploded.jpg" alt="exploded view photo" />  </li>
+      <li>channels
+<img src="/img/plans/book/helix-vent/channels.jpg" alt="channels photo" />  </li>
+      <li>spacers
+<img src="/img/plans/book/helix-vent/spacers.jpg" alt="spacers photo" />  </li>
+    </ul>
+  </li>
+  <li>
+    <p>general comments</p>
+
+    <p>I call it a helix vent because air actually moves that way inside it: like a corkscrew. At first glance, it looks like the air would move like light, bouncing left and right in a horizontal plane through the sine wave-shaped channels of the vent. But actually, the air helixes through them, efficiently maintaining one trajectory, spiraling forward but with a constant radius, up to the right then down to the left. And because the helix is the natural form of fluids in motion, this minimizes friction within the airstream as well.</p>
+
+    <p>The helix vent can go anywhere. Window: attach it to the back of a window panel and crack the window behind it. Door: cut the necessary slot(s) and use instead of an underdoor vent. Wall vent (leading outside or to another room): attach vent to a cardboard box and attach box to the wall over the vent. Vents can be either supply or return vents; air flows either direction through the vent. Note that carbon dioxide is heavier than air, so exhaust vents should be as close to the floor as possible.</p>
+
+    <p>If your darkroom’s ventilation is passive, put vents both low and high in window panels, doors, or wall vents to enable convection. The greater the inside and outside temperature difference; the greater the vertical distance between vents; and the more vents; the better this works.</p>
+
+    <p>Materials are simple and non-toxic: heavy black paper (weights given below), cardboard, fabric, wood glue. Look in art or office supply shops for the black papers. North Americans, use this <a href="http://www.paper-paper.com/weight.html">paper weight and size conversion chart</a>. If necessary, get larger paper and cut it down. School glue will work in a pinch, but wood glue has greater tack and quicker drying time, greatly easing assembly. </p>
+
+    <p>First, read through instructions once while studying plans.</p>
+  </li>
+</ul>
+
+<ol>
+  <li>materials:
+    <ol>
+      <li>black paper, bond or coverstock
+        <ul>
+          <li>120–150gsm, A4, letter, or 9” x 12”, 5 sheets (lightweight for channels)</li>
+          <li>250–400gsm, A2, 1 sheet (heavyweight for walls)</li>
+        </ul>
+      </li>
+      <li>cardboard, single layer, 3–4.3mm thick, A2, 1 sheet (shell)</li>
+      <li>polar fleece fabric, black, medium weight, 1 A4 or letter size piece (10 layers of it in a stack should measure 30-35mm high)</li>
+      <li>bamboo skewers, 2–3mm dia x 150–300mm, 20 pieces (smaller diameter is better; sushi mats, cheap and easily cut apart, are often made of smaller sticks)</li>
+      <li>drinking straws, black (pubs often have them)</li>
+      <li>wood glue (any grade, unthickened)</li>
+    </ol>
+  </li>
+  <li>tools:
+    <ol>
+      <li>metric ruler, 30cm long. If reproducing the drawings by hand rather than printing them, I recommend using an <a href="http://incrarules.com">Incra ruler</a> for its effortless precision. In fact, I recommend it for making anything at all ever. It’s the greatest hand tool I have ever used.)</li>
+      <li>scissors</li>
+      <li>masking tape</li>
+      <li>metal straight edge, 50cm long</li>
+      <li>razor knife with new blade</li>
+      <li>table knife</li>
+      <li>hole punch or sharpened wooden pencil</li>
+      <li>3 straight pins with masking tape handles</li>
+      <li>pushpin</li>
+      <li>toothpick</li>
+      <li>magnifying glass (even a tiny plastic one works, like the one in a Swiss Army knife)</li>
+      <li>mechanical pencil, 0.5mm lead</li>
+      <li>hardback book, letter or A4 size</li>
+      <li>plastic grocery bag</li>
+      <li>hacksaw blade</li>
+    </ol>
+  </li>
+  <li>plans
+    <ol>
+      <li>key
+<img src="/img/plans/book/shell.jpg" alt="shell plan" />
+<img src="/img/plans/book/outer-wall.jpg" alt="outer wall plan" />
+<img src="/img/plans/book/inner-wall.jpg" alt="inner wall plan" />
+<img src="/img/plans/book/channels.jpg" alt="channels plan" /> 
+<img src="/img/plans/book/legend.jpg" alt="legend" />  </li>
+      <li>draw: if redrawing plans by hand from key or screen,
+        <ol>
+          <li>use millimeter measurements in drawings</li>
+          <li>use 1mm graph paper</li>
+          <li>deduce missing measurements; if it looks the same, it is. Plans are uniform, vertically symmetrical, and orthogonal</li>
+        </ol>
+      </li>
+      <li>print
+        <ol>
+          <li>download zip file of all plans at <a href="/helixvent.zip">darkroomretreat.com/helixvent.zip</a></li>
+          <li>extract 14 pdfs from zip file</li>
+          <li>in file names, T, B, L, R stand for top, bottom, left, right</li>
+          <li>open with Adobe Reader (not Adobe Professional) </li>
+          <li>in print dialogue, set page sizing or scaling to “actual size” or “scaling: none”</li>
+          <li>paper size
+            <ul>
+              <li>metric: use A4 for everything; don’t print “inner wall legal”</li>
+              <li>North America: use letter size for shell, outer wall, and spacers; use legal size for channels and “inner wall legal”; don’t print “inner wall A4”</li>
+            </ul>
+          </li>
+          <li>small numbers in drawings indicate millimeters between lines. After printing, use ruler to make sure plans are correct size (within 1mm)</li>
+        </ol>
+      </li>
+      <li>join
+        <ol>
+          <li>shell and inner and outer wall plans are bigger than the paper, so each plan is split into multiple sheets which must be joined into whole plans</li>
+          <li>large label of each plan is visible in every sheet and will overlap</li>
+          <li>cut out wedges drawn on grid boxes and lines to see grid boxes and lines of sheets below and align them</li>
+          <li>join sheets in numeric order, each sheet on top of earlier ones</li>
+          <li>grid boxes will probably not all overlap perfectly due to printer distortion, so:
+            <ol>
+              <li>align grid boxes at edges exactly, at center inexactly</li>
+              <li>tape only grid boxes at edge</li>
+              <li>then align center grid boxes again as well as possible and tape all sheets in center</li>
+            </ol>
+          </li>
+          <li>optional: permanently join sheets with tiny smears of wood glue near tape</li>
+          <li>to modify plans, download the <a href="/img/plans/helixventsvg.zip">SVG source files</a>, made with <a href="https://inkscape.org/">Inkscape</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>make parts
+    <ol>
+      <li>general instructions for marking, creasing, cutting
+        <ol>
+          <li>tape plans to material with masking tape</li>
+          <li>put 2-3 layers of cardboard under material </li>
+          <li>solid: poke razor knife through ends of lines, making short slits</li>
+          <li>dashed: poke straight pin through ends of lines</li>
+          <li>triangle-dashed: poke straight pin twice through ends of lines, all the way through material</li>
+          <li>crosshairs
+            <ul>
+              <li>poke straight pin through centers</li>
+              <li>use magnifying glass for ease and geeky precision thrills</li>
+              <li>with pencil, circle holes in material as you remove plan</li>
+            </ul>
+          </li>
+          <li>using metal straight edge,
+            <ol>
+              <li>crease between holes with back of table knife tip; double holes get creased on back side of material</li>
+              <li>cut between slits with razor knife</li>
+            </ol>
+          </li>
+          <li>fold material into creased side</li>
+          <li>holes
+            <ol>
+              <li>enlarge all holes with the pointed end of a skewer</li>
+              <li>twist skewer as you push it in slowly; this keeps hole centered around original pinhole</li>
+              <li>for more speed and accuracy, use a power drill and a shortened skewer; hold drilling area over edge of table so skewer can safely puncture material.</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>shell
+        <ol>
+          <li>one side of cardboard usually has faint brown parallel lines created by corrugations; put this side up. </li>
+          <li>orient plan diagonally to lines</li>
+          <li>follow general instructions</li>
+        </ol>
+      </li>
+      <li>inner and outer walls
+        <ol>
+          <li>arrange both plans to fit on the same piece of heavyweight paper and tape in place</li>
+          <li>follow general instructions 1-7
+            <ol>
+              <li>on inner wall plan, only poke holes through two crosshairs inside dash-dotted circles</li>
+              <li>before enlarging holes, lay inner wall plan over outer wall plan, aligning them with straight pins through matching crosshairs with holes</li>
+              <li>poke rest of holes in inner wall plan, pushing straight pin through outer wall plan</li>
+            </ol>
+          </li>
+          <li>glue flaps T and B where indicated</li>
+        </ol>
+      </li>
+      <li>protectors
+        <ol>
+          <li>these are disposable</li>
+          <li>make from any heavy paper, like a cereal box</li>
+        </ol>
+      </li>
+      <li>channels
+        <ol>
+          <li>put plan onto one sheet of midweight paper so it does not extend beyond edges</li>
+          <li>cover tape holes with tape, affixing plan to paper</li>
+          <li>neatly add three more sheets of paper to bottom of stack so all edges are aligned</li>
+          <li>poke straight pin through centers of circled Xs. Use magnifying glass.</li>
+          <li>poke first two holes in opposite corners of drawing, leaving pins in. This will anchor all sheets while marking</li>
+          <li>follow general instructions 4-5
+            <ol>
+              <li>replace anchors after removing plan from material</li>
+              <li>use anchors when turning over stack to crease circled lines</li>
+              <li>when creasing, press hard to reach all four layers</li>
+            </ol>
+          </li>
+          <li>as with walls, enlarge holes with skewer</li>
+          <li>fold channels enough for their holes, 30mm apart when flat, to line up with the holes in the walls, 26mm apart.</li>
+        </ol>
+      </li>
+      <li>spacers
+        <ol>
+          <li>put straws inside pillow case</li>
+          <li>iron drinking straws flat, setting heat between silk and wool</li>
+          <li>mark with straight pin and cut straws into 56, 10mm long pieces and 14, 12mm long pieces</li>
+        </ol>
+      </li>
+      <li>gaskets
+        <ol>
+          <li>tape over tape holes</li>
+          <li>affix to black fleece fabric</li>
+          <li>cut out fabric gasket with fabric scissors</li>
+          <li>remove plan</li>
+          <li>repeat steps 2-4 to make 2 gaskets </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>assemble vent
+    <ol>
+      <li>core with skewers, spacers, and channels
+        <ol>
+          <li>select 18 of the thinnest, straightest skewers</li>
+          <li>slide a 15mm spacer onto a skewer, 40mm past the point</li>
+          <li>prepare 12 skewers like this</li>
+          <li>leave the other 6 skewers plain</li>
+          <li>stand a channel up so the bends run vertically and the right and left edges wave away from you, as in the photo</li>
+          <li>(if left-handed, reverse right and left in following instructions)</li>
+          <li>push a prepared skewer through the top right hole of the channel till the spacer hits the channel</li>
+          <li>slide a 13mm spacer over the point till it hits the backside of the channel</li>
+          <li>repeat steps 7-8 with the holes along the right edge</li>
+          <li>put a plain skewer through the bottom hole second from the right</li>
+          <li>then do step 8 with it</li>
+          <li>moving leftward, repeat steps 7, 8, 10, 11</li>
+          <li>repeat step 12 with top holes</li>
+          <li>repeat step 9 with the holes along the left edge</li>
+          <li>repeat step 5, putting channel behind first one</li>
+          <li>now all skewers are in position. Repeat steps 7-15 till skewers are pushed through 4 channels, keeping channels parallel to each other and undistorted</li>
+          <li>over points of 6 originally plain skewers, slide a 15mm spacer</li>
+          <li>push each skewer farther through core till 40-60mm, including the point, is sticking out the back. Let the ones at the bottom right stick out most, those at top left the least, and graduate the lengths between</li>
+        </ol>
+      </li>
+      <li>outer wall
+        <ol>
+          <li>hold outer wall behind core so walls flaps bend toward you at top, bottom, and right</li>
+          <li>as you do the following, keep core undistorted by pushing skewers into outer wall a little at a time: 5-10mm</li>
+          <li>this is a bit of a trick because skewers are not exactly lined up with holes in outer wall and, at first, wall keeps sliding off skewers. It’s a bit like herding cats till you get the hang of it.</li>
+          <li>push bottom right skewer into bottom right hole of outer wall</li>
+          <li>repeat, moving up the right side</li>
+          <li>repeat along bottom holes, right to left</li>
+          <li>repeat along top holes, right to left</li>
+          <li>repeat along left side</li>
+          <li>gradually work outer wall 15–20mm onto skewers</li>
+          <li>before getting them all the way to the spacers and channels, spread glue on back convex bends and folds of channels, where they will touch the wall. Squirt out a small pool of glue, dip your finger in it and spread it. Avoid getting glue on skewers. Work quickly; the glue dries fast!</li>
+          <li>practice these movements without glue once</li>
+          <li>slide the wall home and press on its backside where channels are touching it, pushing on the skewers and spacers from the front.</li>
+          <li>allow it to dry for 20 minutes</li>
+        </ol>
+      </li>
+      <li>inner wall
+        <ol>
+          <li>with heavy scissors, cut off about 10mm of points of skewers</li>
+          <li>cut off butts of skewers so each skewer is left 150mm long</li>
+          <li>turn assembly around so outer wall faces you and channels face away from you</li>
+          <li>slide inner wall onto skewers as in steps 4–13 of outer wall assembly, above </li>
+        </ol>
+      </li>
+      <li>trim skewers
+        <ol>
+          <li>slide protectors over back top skewers</li>
+          <li>cut off skewers with hacksaw blade
+            <ul>
+              <li>note tooth direction and hold hacksaw blade so it cuts on the pull stroke</li>
+              <li>cover “handle” of blade with masking tape</li>
+            </ul>
+          </li>
+          <li>repeat with back bottom skewers, then back side skewers</li>
+          <li>repeat 1-3 with front skewers</li>
+          <li>if protector wears out, make another one</li>
+        </ol>
+      </li>
+      <li>gaskets and seals
+        <ol>
+          <li>lay gasket over top of channels, making sure gasket edges are snug against walls</li>
+          <li>spread glue inside the outer wall top where it will touch the gasket</li>
+          <li>fold the top down to gasket</li>
+          <li>lift up top and thoroughly press it and gasket together</li>
+          <li>fold it back down</li>
+          <li>spread glue inside 20mm top flap of inner wall. Affix it to top so left edges match up. Hold them together for one minute, especially at ends</li>
+          <li>repeat 1-6 with bottom gasket</li>
+          <li>spread glue inside 20mm flap, top right, and affix it to side of vent</li>
+          <li>repeat at bottom</li>
+        </ol>
+      </li>
+      <li>shell
+        <ol>
+          <li>fold top, side, and bottom together and glue</li>
+          <li>hold joints together with two pieces of masking tape each</li>
+          <li>allow them to dry for 2 hours</li>
+          <li>remove tape, working from ends toward middle</li>
+          <li>seal joints with strips of lightweight black paper and glue</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>installation
+    <ol>
+      <li>determine vent location
+        <ul>
+          <li>vertical orientation of vent is best, but not required</li>
+          <li>in a panel, left opening of vent should face the window opening.</li>
+        </ul>
+      </li>
+      <li>on panel, mark slot for inner vent opening</li>
+      <li>cut hole in panel exactly the size of the vent opening, 40mm x 280mm</li>
+      <li>from the back, position vent over hole and fit vent flaps through it</li>
+      <li>lay panel on floor, vent down and front side up</li>
+      <li>pulling top flap up snugly, use back of table knife tip to crease the outside of it right where it passes through hole</li>
+      <li>fold flap at crease and glue it to front of panel</li>
+      <li>repeat with bottom flap, then with side flaps</li>
+      <li>glue shell onto back of panel over vent</li>
+      <li>cover shell with foil and/or white paper to minimize warping by sun</li>
+    </ol>
+  </li>
+</ol>
+
+<h6 id="underdoor-vent">underdoor vent</h6>
+
+<p>(<a href="/img/plans/vent-underdoor-large.jpg">enlarged image here</a>)<br />
+Wavy line: darken this area with black marker.<br />
+<img src="/img/plans/vent-underdoor.jpg" alt="underdoor vent 3d elevation and plan" />
+   </p>
+
+<ol>
+  <li>make parts
+    <ol>
+      <li>tape plan onto printed side of posterboard</li>
+      <li>put posterboard on one layer of scrap cardboard</li>
+      <li>poke pushpin through points of plan and into posterboard </li>
+      <li>put ballpoint pen into holes and twist to mark them. Then circle the holes so they are visible amidst printing</li>
+      <li>cut solid lines, score </li>
+      <li>join pairs of lettered points in alphabetical order </li>
+    </ol>
+  </li>
+  <li>assembly
+    <ol>
+      <li>fold vent together once without glue to see how vent assembles. Temporarily tape joints</li>
+      <li>where flaps have nothing to attach to, fold and glue them back to reinforce edge</li>
+      <li>plan order of joint and fabric gluing</li>
+      <li>cut fabric</li>
+      <li>then glue everything </li>
+    </ol>
+  </li>
+</ol>
+
+<p>The measurements of the underdoor vent must be adjusted for the thickness of the door and the gap under the door. Tape the triangular fins to the sides and bottom of the door. Not only cover the inside of the vent with black fabric, but the part of the door it surrounds, the outside bottom of the vent, and the threshold below it. Then you can get a good light seal.</p>
+
+<h5 id="fan">fan</h5>
+
+<p>The quick and dirty solution is a 12V DC case fan, also known as a squirrel cage fan. 120mm is the most common size. Salvage it from a discarded desktop computer tower, or buy it used for $1 at thrift stores or flea markets or new for $5–50 at a computer or electronics store. Power it with an AC/DC universal adapter with variable voltage for speed control ($1–5 at thrift or discount stores).</p>
+
+<p>If you do not have electricity, and you just want to try this for a night or two, power the fan with AA batteries. You will only need 4-8 of them for one night. Tape them together in series, positive end of one to negative end of the next, with one fan wire at each end of the series. No fan movement? Switch the positive and negative wires.</p>
+
+<p>Constantly changing the batteries quickly gets to be a pain. I got a proper solar power system for less than $100:</p>
+
+<ul>
+  <li>solar panel: 12V. Size depends on location: 10W in Guatemala, 40W in rainy Oregon winter. ($10–$100 on eBay)</li>
+  <li>charge controller: 12V, 4 or 6-pole ($35 on eBay)</li>
+  <li>battery: 12V 7A, lead acid ($30 at a motorcycle shop)</li>
+  <li>wire, 20 AWG, enough to connect everything ($0–10 from a dumpster, yard sale, or hardware store).</li>
+</ul>
+
+<p>Once set up, wipe dust off panel once a week.</p>
+
+<h5 id="noise">noise</h5>
+
+<p>Using such a small fan raises the noise issue, depending on one’s sensitivity. These fans run at high speed, so they hum and develop harmonics. This can quickly get irritating. 300–400mm case fans are available. The bigger a fan is, the more slowly and quietly you can run it, and the longer you can retreat without irritation. </p>
+
+<p>Fan motors are integrated with the fan blades. This puts the motor in the airstream, so fully silencing it requires a <a href="https://www.google.com/search?q=duct+silencer">duct silencer</a>, which works like a gun silencer. Or use <a href="http://www.fantronix.com/acatalog/Acoustic_Ducting.html">acoustic ducting</a>, at least 3m. Put it inside a square tube made of dense material like wood to block noise from outside the building. Here is a <a href="http://www.whisperroom.com/sound-booth-optional-features.php#vent">silencer for sound booths</a> which eliminates the need for a lightproof vent.</p>
+
+<p>Put the duct outside the room to stop the most noise. Put the fan at the end blowing air out from the building.</p>
+
+<p>Thanks to Richard Nöjd of Skattungbyn, Sweden, for finding these cool solutions. I have not tried any of them yet. They make sense and seem better than what I could imagine.</p>
+
+<h5 id="heat-recovery">heat recovery</h5>
+
+<p>If you live in a cold place, I highly recommend buying and installing a <a href="http://en.wikipedia.org/wiki/Heat_recovery_ventilation">Heat Recovery Ventilator (HRV)</a>. It conducts heat from return to supply while keeping the airstreams separate. </p>
+
+<p>Fine wire heat exchange (fiwihex) technology is my favorite. It is 10x more efficient than conventional plate exchangers. Fiwihex cores are available for $150 from <a href="http://vikinghouse.ie">Viking House</a> and <a href="http://vision4energy.ne">Vision4Energy</a>. These companies’ <em>Breathing Windows</em> embody an intriguing design for a complete ventilation system. But I lived with one for six months and found it too loud due to its small fans with integrated motors. Thus my thinking about silent fans (more below).</p>
+
+<p>The most interesting plate exchangers use the Mitsubishi _Lossnay_core, found in Energy Recovery Ventilators such as <a href="http://www.soundgt.com/recvent.htm">Renewaire’s</a>. Made of high-tech paper, the Lossnay recovers heated water vapor as well as heat from air. Lossnay’s principle has DIY-potential, using 25m<sup>2</sup> of non-siliconized parchment paper (“sandwich paper” in supermarkets). I have conceived a design for it. Please write me for details.</p>
+
+<p>A recovery ventilator requires two fans. The trouble with case fans is that they are axial fans. These do not efficiently generate pressure to overcome resistance in ventilation systems (long pipes, heat exchanging cores, filters). But centrifugal fans can. </p>
+
+<p>It might be nice to have a truly silent fan for this. I have conceived a design for a 700–900mm, low-RPM <a href="http://gingerybookstore.com/product36.html">homemade centrifugal fan</a>, powered from <em>outside</em> the airstream by a motor in a separate, soundproofed case. The fan’s metal or plastic parts would be lasercut according to an open-source, electronic drawing file. Please write me for details of concept.</p>
+
+<h4 id="darkness">darkness</h4>
+
+<p>Light is relentless. The basic method of darkening a room is to:</p>
+
+<ol>
+  <li>use complimentary materials that are inherently lightproof and</li>
+  <li>layer them over the light source until the light is blocked</li>
+</ol>
+
+<p>Block as much light as possible with each layer. First, block 95% the light. Then 95% of what’s left. By the third layer, you can seal it out. If three layers is not enough, improve your materials and methods so your darkening measures are neat, easy to use, and reliable.</p>
+
+<p>Edges are always the tricky part. Black polar fleece is the best thing I have found for sealing out light at edges. Its like a sponge for light. It is widely available, cheap, and forgiving. It is a knit fabric, so its edges do not require a hem. Just cut and attach with glue or tape.</p>
+
+<p>Other good light proofing materials:</p>
+
+<p>cardboard
+blackout blinds from IKEA (uses acrylic coating, not PVC)</p>
+
+<h5 id="darken-door">darken door</h5>
+
+<p><strong>door seal</strong> cross section<br />
+<img src="/img/plans/door-seal.jpg" alt="door seal cross section design" /></p>
+
+<ol>
+  <li>Sides and top: affix 50mm wide strips of black fabric to door jam with masking tape <em>or</em> white school glue. When closing, door should catch fabric, bending it around one edge of the door and fill the gap between the door and jam. </li>
+  <li>Bottom: affix fabric to the door so fabric hangs down 20-40mm and bends a bit when door is closed. If there is no threshold, make one by taping a 100mm wide strip of black fabric to the floor under the closed door. Black fabric against black fabric makes a good light seal.</li>
+  <li>Where an underdoor vent is necessary, put fabric strips to its sides.</li>
+  <li>If light still leaks in the sides or top, affix another strip to door.</li>
+  <li>To remove glued-on fabric, wet it. This will dissolve the glue and the strips will fall off. As this happens, wipe off the rest of the glue with a wet rag.</li>
+</ol>
+
+<h5 id="darken-window">darken window</h5>
+
+<p>To darken windows, use one of the three methods I have come up with—panel, plastic, and foil—or have blackout blinds made with side rails. Or invent something else! Cool.</p>
+
+<p>window darkener <em>constraints:</em></p>
+
+<ul>
+  <li>perfectly darkening</li>
+  <li>requires no permanent installation</li>
+  <li>leaves no marks or holes</li>
+  <li>quickly and easily handled so it actually gets used</li>
+  <li>good-looking</li>
+  <li>discreet: looks like a blind or curtain from the outside (not a pot-growing operation)</li>
+  <li>accommodates lightproof ventilation</li>
+  <li>window or trickle vent can be open behind it</li>
+  <li>holds its shape over time in different weather</li>
+  <li>durable</li>
+  <li>of common, cheap materials</li>
+  <li>reasonably easy to make</li>
+</ul>
+
+<p>Problem: amazingly, the fabric used in many blackout blinds is not completely lightproof. And some have toxic plastic coatings like polyvinyl chloride (PVC). Get full disclosure of material content. In one product’s detailed specifications, under coating it read, “polymer”, which can mean any plastic, including PVC. I rejected it. Get a guarantee of absolute lightproofness of the entire installation. Tell them you will be testing it with the most high-tech equipment in the world: human eyes that have had three days to adjust to darkness). </p>
+
+<p>I found PVC-free shades listed here: <a href="http://www.draperinc.com/windowShades/PVCfreeShadeFabrics.asp">Draper Inc</a>. </p>
+
+<p>This product seems interesting:
+http://magicblackoutblind.co.uk</p>
+
+<p>Of the three homemade methods, described in detail below, the panel is best because it is easily removed, non-toxic, sound-dampening, leaves no marks or damage, and is decorable. It has three variations. Plastic can be reused, perhaps traveled with. It is easier and quicker than the panel. It smells a little. Foil is for one-time use, and the PVC tape is toxic, so avoid if possible.</p>
+
+<h6 id="panel">panel</h6>
+
+<p><strong>elevation</strong><br />
+<img src="/img/plans/panel.jpg" alt="panel design" /></p>
+
+<p>This is like a stretched canvas for painting, but with lightproof padding around the frame and maybe paper instead of canvas. A smart, creative friend, <a href="https://www.facebook.com/bodytalkforbalance">Hannah Torres</a>, gave me the idea. Read through instructions to understand the process and make an exact parts list. The instructions are long because I’ve broken the process into tiny steps. All figures are metric. As always, feel free to write me with any questions you might have.</p>
+
+<p>The panel will fit inside the window opening and against the window frame. The panel makes space for window handles that stick out beyond their frames. </p>
+
+<p>If your air supply comes through your window, attach a lightproof vent to cover of panel near the top. Probably attach it to the front due to lack of space between cover and glass). <!-- to the panel on the back near the top so it does not stick out into the room. Test position of vent before gluing to make sure it clears the window frame, handles, etc. --> If your supply and return air pass through your window, you will need two lightproof vents, one near the top and one near the bottom of the panel.</p>
+
+<ol>
+  <li>parts
+    <ol>
+      <li>dimensional lumber: 15–24mm x 45–100mm and 15% more than enough length to get around the insides of your window openings</li>
+      <li>deck screws: 40–50mm, 4</li>
+      <li>strap: webbing or strap sewn of fabric, ~25mm wide x 200mm</li>
+      <li>cover
+        <ol>
+          <li>blanket: black, heavy, and thick, like dense wool or 2-3 polar fleece</li>
+          <li>sheet: heavy kraft paper or medium-weight, tightly woven natural fabric (canvas, twill)</li>
+        </ol>
+      </li>
+      <li>wood glue (for sheet cover)</li>
+      <li>cardboard (for sheet cover): clean and odorless, from furniture and appliance stores. Use two sheets to ensure lightproofness</li>
+      <li>light seal (for sheet cover): black polar fleece</li>
+    </ol>
+  </li>
+  <li>tools
+    <ol>
+      <li>measuring tape
+        <ul>
+          <li>use a measuring tape whose case length is easily and accurately added to the figure on the tape itself</li>
+          <li>some measuring tapes are designed to give highly accurate internal measurements </li>
+          <li>test tape first by comparing internal and external measurements. Even on good brands, the sliding hook can be inaccurate.</li>
+        </ul>
+      </li>
+      <li>carpenter’s handsaw or chopsaw</li>
+      <li>fabric scissors</li>
+      <li>drill</li>
+      <li>screwdriver</li>
+      <li>razor knife</li>
+      <li>optional: sewing machine</li>
+    </ol>
+  </li>
+  <li>make frame
+    <ol>
+      <li>measure the window opening—all four sides as they are rarely identical.</li>
+      <li>determine which way the wide and narrow sides of the boards should face. Usually, the narrow side faces the room to accommodate handles, blinds, hooks, etc. If possible, face the wide sides of the boards toward the room. To gauge this, hold a short piece of lumber up to the window frame. Move it all the way around to see how it clears the handles, etc.</li>
+      <li>if facing the narrow side toward the room, measure the narrow thickness precisely. Add 8mm to each measurement. Cut the four boards to these meaurements squarely. Use a mitre box, chop saw, or a mark all the way around the board. Mark each board you go as left, right, top, bottom.</li>
+      <li>assemble frame
+        <ol>
+          <li>use a corner clamp or a block of wood and two clamps to hold the frame pieces together</li>
+          <li>drill pilot holes to prevent the wood from splitting</li>
+          <li>screw the frame pieces together</li>
+        </ol>
+      </li>
+      <li>cut two more sticks almost long enough to span the frame diagonally, for temporary angle stabilizers. Sticks must not extend beyond the frame. Drill 5mm holes in ends of these sticks.</li>
+      <li>using wedges or folded paper, wedge the frame into a bottom corner of the window opening.</li>
+      <li>screw one stabilizer diagonally to the front of the frame using 3mm deck screws with washers. This stabilizes the angles of the frame.</li>
+      <li>remove the wedges and make sure frame still fits perfectly into corner. If not, loosen a screw, adjust angle, tighten screw.</li>
+      <li>mark the top board in the middle of the underside as “top”</li>
+    </ol>
+  </li>
+  <li>make cover
+    <ol>
+      <li>blanket cover
+        <ol>
+          <li>This is a quick, non-permanent method. If you need a lightproof vent in your window, this method is incompatible with it, so use sheet cover instead.</li>
+          <li>Get a piece of thick, lightproof fabric (eg, a heavy quilt or wool blanket) bigger than the window opening by 20cm on all four sides.</li>
+          <li>Drape it over back of frame</li>
+          <li>Push frame (with fabric) into the window opening. </li>
+          <li>Use extra fabric to seal any light leaks around the edges. Stuff extra fabric back into the crack between the frame and window opening with a dull knife (like a table knife).</li>
+          <li>Ignore remaining steps. You’re done!</li>
+        </ol>
+      </li>
+      <li>sheet cover
+        <ol>
+          <li>Remove frame from opening and place front side down on a clean floor.</li>
+          <li>Screw other stabilizer to the back of the frame behind the front stabilizer.</li>
+          <li>Remove the front stabilizer and put frame aside.</li>
+          <li>Put down enough clean cardboard to fit inside the frame.</li>
+          <li>If it is more than one piece, butt and glue the edges together with strips of cardboard and wood glue. Allow the glue to dry for 30 minutes.</li>
+          <li>Lay the frame over the cardboard (always front side down).</li>
+          <li>Mark the cardboard along the inside of the frame with a sharp pencil, taking care not to bump the frame out of place.</li>
+          <li>Mark the cardboard where the top of the frame is marked.</li>
+          <li>Remove the frame and cut the cardboard along the marks.</li>
+          <li>Lay the frame back over it to check how well it fits inside the frame. Trim cardboard as necessary.</li>
+          <li>Remove the frame. Turn the cardboard over onto its other side, next to where you have been working.</li>
+          <li>Put down something soft and flat that is bigger than the frame, like a blanket, towel, or piece of foam.</li>
+          <li>Lay down cover material, visible side down. </li>
+          <li>Lay the frame over it so the cover extends beyond it 15mm to make sure where it will end up.</li>
+          <li>Mark two inside corners at the ends of a long side.</li>
+          <li>Remove the frame and apply a 6mm bead of interior wood glue all the way around its front side.</li>
+          <li>Lay the frame back onto the cover where you marked the corners.</li>
+          <li>Press the frame into the cover all the way around to distribute the glue.</li>
+          <li>Scrape up any glue that has squeezed beyond the frame.</li>
+          <li>Wipe around the outside with a wet rag where there was glue.</li>
+          <li>Weight the board with stacks of books.</li>
+          <li>Let the glue dry for 4-24 hours.</li>
+          <li>Apply glue to the edge of the cover and wrap it around the edges of the boards.</li>
+          <li>Use tape to hold it down if necessary.</li>
+          <li>Lay the frame down</li>
+          <li>Remove the stabilizer.</li>
+          <li>Put the cardboard back into the frame, aligning the marks on the cardboard and the frame.</li>
+          <li>Apply an 8mm bead of black acrylic caulk where the cardboard touches the wooden frame.</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<!-- {pagebreak} -->
+
+<p><strong>light seal</strong><br />
+<img src="/img/plans/panel-light-seal.jpg" alt="panel light seal" />  </p>
+
+<ol>
+  <li>make light seal 
+    <ol>
+      <li>Cut 90mm wide strips of black polar fleece, enough to go around the outside of the frame.</li>
+      <li>Fold strip in half the long way and sew it into a tube with machine, 10mm from edges</li>
+      <li>Apply a 3mm bead of glue to the back of the frame on 30cm of one board toward inside.</li>
+      <li>Affix tube of fabric so that cut edges cover glue bead and folded edge extends outward beyond the frame. </li>
+      <li>Affix additional strips as necessary, closely butting the ends together to leave no gaps.</li>
+      <li>Upon reaching a corner:
+        <ol>
+          <li>wrap the fabric toward the front of the frame so it lays on the outside</li>
+          <li>wrap the outside part of the fabric around the corner of the frame</li>
+          <li>wrap it back over the back of the frame and continue gluing</li>
+          <li>This leaves a folded triangle of cloth sticking out from the back of the corner.  Once you have gone around the frame like this, use scissors to neatly trim off triangles</li>
+        </ol>
+      </li>
+      <li>Glue fabric strap, 25mm x 200mm to top outside of the frame so it hangs over the front and does not interfere with the foam and fabric light seal. This is the handle for removing the panel from the window.</li>
+      <li>Put the panel into your window opening to test for lightproofness. If you cut the frame and angled it correctly, it should be seal perfectly. If not, you can glue a 10mm wide strip of polar fleece to the side of the frame under the folded edge of fleece tube.</li>
+    </ol>
+  </li>
+</ol>
+
+<h6 id="plastic">plastic</h6>
+
+<ol>
+  <li>Tape white paper or fabric over glass to hide black or reflective plastic. Reflective plastic is aluminized mylar space blanket/emergency survival blanket. Other possibility is plastic “light deprivation” tarp used in greenhouses. It is white on one side, black on the other. All these must be tested for absolute lightproofness. You may need multiple layers depending on what you get.</li>
+  <li>Cover windows with .2mm / 6-10mil (.006-.010″) black polyethylene plastic sheeting, found at building supply houses in rolls or off a roll by the meter. Several layers of black garbage bags would work, too.</li>
+  <li>Measure and cut it to extend 100mm beyond window frame because light and air often leak between the frame and wall.</li>
+  <li>Tape plastic to the wall. Use 25mm black masking tape. It is effective, cheap, sticks and conforms well to irregular wall surfaces, yet comes off easily without residue (unless you leave it up a long time). Not perfectly lightproof, it works with the plastic. Local art and professional lighting supply stores carry it. <a href="http://lightsonretail.com">lightsonretail.com</a> sells Intertape PF3. If masking tape is not sticky enough on your surfaces, use black kraft paper tape. It is thicker (more lightproof), stronger, more expensive. Look for ProGaff (formerly Permacel) 743, Shurtape 724, and 3M 235.</li>
+  <li>Avoid electrical and gaffer’s tape. They are made of soft vinyl and especially obnoxious adhesives and are thus extremely toxic in their manufacture, handling, use, and disposal.</li>
+  <li>If the room gets too hot from direct sun, then before taping up the black plastic, cut a piece of cardboard the same size as the window opening. Tape or glue aluminum foil to one side of it. Leave 15mm spaces between the strips of foil to allow moisture to pass through. Set the cardboard in window opening, foil facing outward.</li>
+  <li>If it is a cold room, do exactly the same thing as for a hot room, but with the foil facing inward. If the room gets hot and cold with the seasons, open up the plastic on one edge and switch the cardboard around every six months.</li>
+</ol>
+
+<h6 id="foil">foil</h6>
+
+<p>This only works if the window seals perfectly and is perfectly installed. That is, no light comes in through where the window opens, nor around the window frame and behind the trim. Besides aluminum, you could use the plastic materials discussed in previous section.</p>
+
+<p>I do not recommend aluminum foil! It only works one time. When it bends, it cracks and creates light leaks you can’t see till the middle of a retreat. Bummer. But it is cheap and works in a pinch if you are careful. There’s a trick to this.
+1. Buy wide, heavy duty foil and electrical tape (19mm black vinyl).
+2. With scissors, cut several 3cm pieces of tape and hang them within reach of the window. Keep scissors handy, too.
+3. Here’s the trick. Remove foil roll from box. You will unroll it directly onto the glass and cut it with scissors in place. This minimizes bending and cracking. Do not attempt to unroll foil from the box and tear it off, away from the window, then move it to the glass.
+4. You will tape foil directly to the glass. If you tape it to the frame, suspended in midair away from the window, it will rattle as air pressure changes near the window. Annoying. 
+5. Starting at top left of window pane, unroll foil downward 10cm. Tape foil at top with small piece of tape.
+6. Continue unrolling to bottom. Cut foil a little longer than the glass.
+7. Unstick tape at top and position foil against frame.
+8. With small pieces of tape every 50 cm, tape left side of foil to frame and right side to glass.
+9. Repeat steps 5–8 starting at top right of window pane. Then fill in the middle.
+10. Tape foil seams, where the foil sheets overlap. As you pull out a length of tape, it will stretch. Let it relax before applying it.
+11. Tape the foil to the frame (it’s a bit tricky to bend the tape into the corner of glass and frame; please improve this method).
+12. Hang dark blankets over the window to catch any leaks.</p>
+
+<h4 id="bathroom--kitchen">bathroom &amp; kitchen</h4>
+
+<p>If you have a bathroom and kitchen you can easily darken or use with a blindfold, great. Otherwise, here are designs for quick, cheap, portable fixtures. You can incrementally improve them as you find out the value of retreating for yourself. </p>
+
+<p>For a 4-day retreat in a building without plumbing, improvise like this: </p>
+
+<ul>
+  <li>toilet: a 20-liter bucket with a toilet seat on top. No kidding!
+    <ul>
+      <li>put 2 liters of sawdust in the bottom</li>
+      <li>put 15 liters more sawdust in another bucket by the toilet</li>
+      <li>put a half-liter of sawdust in toilet after each use</li>
+      <li>place toilet away from bed and close to exhaust vent</li>
+      <li>dispose of waste in a covered compost pile that is going to sit for a year</li>
+    </ul>
+  </li>
+  <li>bathing
+    <ul>
+      <li>washcloth or sponge for a sponge bath</li>
+      <li>upgrade 
+        <ul>
+          <li>on waterproof floor (or covered with large plastic sheet) make a 2m diameter border of towels or bedsheet and sit in the middle </li>
+          <li>put shower water in two 1.5-liter bottles with drinking spouts</li>
+          <li>hold a bottle above yourself with one hand and wash yourself with the other</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>sink
+    <ul>
+      <li>basic
+        <ul>
+          <li>10 or 20-liter bottle with valve-cap</li>
+          <li>on 25cm-high stand</li>
+          <li>behind rectangular plastic basin (like a restaurant bus tub)</li>
+          <li>on a table</li>
+        </ul>
+      </li>
+      <li>upgrade
+        <ul>
+          <li>salvaged sink set in a counter-height table</li>
+          <li>drains directly into waste bucket</li>
+          <li>upgrade again by adding a drain tube to outside. </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>drinking water (if separate from wash water): in 20-liter bottle with valve-cap</li>
+  <li>waste (water and food): two, 20-liter buckets with lids</li>
+</ul>
+
+<p>Voila.</p>
+
+<p>Too punk rock for you? Upgrades below.</p>
+
+<!-- {pagebreak} -->
+
+<h5 id="composting-toilet">composting toilet</h5>
+
+<p><img src="/img/plans/toilet-top.jpg" alt="composting toilet top design" /><br />
+<img src="/img/plans/toilet-liner.jpg" alt="composting toilet liner design" /><br />
+<img src="/img/plans/toilet-frame.jpg" alt="composting toilet frame design" /></p>
+
+<p>Basically, a 20-liter bucket sits inside a sturdy box with a hole in the top. The return duct attaches to a hole in the side of the box. So all air exits the room through the toilet, containing all odor. Bucket also collects pee, so empty it every 3-5 days. Making a vented urinal or a toilet that separates pee from poop is possible, too. </p>
+
+<h6 id="construction">construction</h6>
+
+<ul>
+  <li>top
+    <ul>
+      <li>made of 15–20mm tongue and groove boards or 12mm plywood</li>
+      <li>front and back boards, ~25mm x 37mm, fit on top of front and back frame pieces and between frame legs</li>
+      <li>hole is slightly smaller than bucket </li>
+      <li>attach toilet seat &amp; lid to top</li>
+      <li>reinforcer only for tongue and groove boards, directly behind toilet seat mounts</li>
+    </ul>
+  </li>
+  <li>liner
+    <ul>
+      <li>liner goes inside frame</li>
+      <li>toilet bucket goes inside liner</li>
+      <li>liner made of 0.2mm plastic sheeting, folded into open box. Do not cut. Fold triangular flaps, <em>A</em>, outside box</li>
+      <li>15mm minimum space between bucket and toilet top</li>
+      <li>cut hole, <em>B</em>, 3cm small for snug fit on return duct</li>
+      <li>top edges fold over horizontal frame pieces and get thumbtacked in place</li>
+    </ul>
+  </li>
+  <li>frame
+    <ul>
+      <li>joint is extra strong, non-planar joint</li>
+      <li>dots, <em>C</em>, indicate heads of screws. Always drill pilot holes for screws</li>
+      <li>dimensions: 35–40cm high x 60cm wide x 60cm deep</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="portable-shower">portable shower</h5>
+
+<p><strong>exploded view</strong><br />
+<img src="/img/plans/shower.jpg" alt="shower design, exploded" /></p>
+
+<p>A simple shower which requires no plumbing pipes uses (from top down):</p>
+
+<ul>
+  <li>hook (in ceiling, 30mm)</li>
+  <li>bucket (4-liter, hangs from hook by handle)</li>
+  <li>siphon tube (polyethylene, 4mm ID x 50cm, bent near its middle with heat to hook over rim of bucket)</li>
+  <li>4 cords (hung from hook, tied to curtain rod)</li>
+  <li>shower curtain rod (circular, 120cm diameter, made of 30mm OD, black poly pipe, dowel inside ends for smooth joint)</li>
+  <li>shower curtain (polyester, with upper sleeve or grommets and rings for rod, 5cm bottom hem with small river rocks inside to weigh it down)</li>
+  <li>large tub (90L+, from garden supply store, catches everything at the bottom)</li>
+</ul>
+
+<p>Water heating methods:</p>
+
+<ul>
+  <li>solar: use two, clear, 2-liter bottles with rectangles of black plastic sheeting inside to act as elements </li>
+  <li>electric tea kettle with indicator lights covered. Obviously this is a little dangerous, so practice it before retreating to get measurements and procedure right</li>
+</ul>
+
+<p>When ready to bathe, suck on the tube to start the siphon action. Water flows for eight minutes. Not bad. Larger bucket=longer showers=more water needed. Dump used water into a 20-liter bucket with a lid for disposal later.</p>
+
+<p>~~</p>
+
+<p>I assume you will find simpler, more adaptable ways to make darkrooms in a variety of settings. Please share your methods.</p>
+
+<p>~~</p>
+
+<p>More metric near-equivalents:</p>
+
+<ul>
+  <li>30cm = 1’ (foot)</li>
+  <li>3m = 10’</li>
+  <li>1m<sup>2</sup> = 11ft<sup>2</sup></li>
+  <li>4’ x 8’ sheet = 120cm x 240cm (~3m<sup>2</sup>) </li>
+  <li>1kg = 2.2 lbs</li>
+  <li>28g = 1 oz</li>
+</ul>
+
+<p class="arrow"><a href="/design/">&lt;</a>   <a href="/"><code>^</code></a>   <a href="/faq/">&gt;</a></p>
+
+    </div>
+  </body>
+</html>
